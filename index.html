@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		<script src="index.js" defer></script>
+		<style>
+			.floatbtn {
+				position: fixed;
+				bottom: 70px;
+				right: 70px;
+				z-index: 999999;
+			}
+			.modal {
+				width: 100vw;
+				height: 100vh;
+				background-color: hsla(0, 0%, 0%, 0.75);
+			}
+			.inner-modal {
+				min-width: 350px;
+				width: 60%;
+				min-height: 50%;
+				background-color: #fff;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4">FullStackholic</h1>
+				<p class="lead">the best learning materials in the world.</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row justify-content-center mb-4">
+				<div class="btn-group btn-group-toggle" data-toggle="buttons">
+					<label class="btn btn-secondary active">
+						<input type="radio" name="options" id="allinp" checked /> All
+						<span class="badge badge-light">4</span>
+					</label>
+					<label class="btn btn-secondary">
+						<input type="radio" name="options" id="beerinp" /> Beer
+						<span class="badge badge-light">4</span>
+					</label>
+					<label class="btn btn-secondary">
+						<input type="radio" name="options" id="whiskeyinp" /> Whiskey
+						<span class="badge badge-light">4</span>
+					</label>
+					<label class="btn btn-secondary">
+						<input type="radio" name="options" id="wineinp" /> Wine
+						<span class="badge badge-light">4</span>
+					</label>
+				</div>
+			</div>
+
+			<div class="list row justify-content-center"></div>
+		</div>
+		<button type="button" class="btn btn-warning rounded-circle btn-lg floatbtn">
+			+
+		</button>
+		<div class="modal">
+			<div class="inner-modal">
+				<form id="add-form">
+          <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="optionsadd" id="beeraddinp" checked/> Beer
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="optionsadd" id="whiskeyaddinp" /> Whiskey
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="optionsadd" id="wineaddinp" /> Wine
+            </label>
+          </div>
+					<div class="form-group">
+						<label for="abv">Abv</label>
+						<input type="number" class="form-control" id="abv" />
+					</div>
+					<div class="form-group">
+						<label for="countery">Country</label>
+						<input type="text" class="form-control" id="countery" />
+					</div>
+					<div class="form-group">
+						<label for="img">Image</label>
+						<input type="text" class="form-control" id="img" />
+					</div>
+					<div class="form-group">
+						<label for="fst">brewery</label>
+						<input type="text" class="form-control" id="fst" />
+					</div>
+					<div class="form-group">
+						<label for="snd">style</label>
+						<input type="text" class="form-control" id="snd" />
+					</div>
+					<div class="form-group">
+						<label for="trd">ibu</label>
+						<input type="number" class="form-control" id="trd" />
+					</div>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+

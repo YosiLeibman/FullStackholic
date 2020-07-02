@@ -1,0 +1,31 @@
+-Beverages
+--abv:n
+--country:s
+--img:s
+--awards:s[]
+--stock static
+
+-Beer
+--brewery:s
+--style:s
+--ibu:n
+--stock static
+
+-Whiskey
+--distillery:s
+--style:s
+--age:n|s
+--stock static
+
+-Wine
+--winery:s
+--grapes:s
+--vintage:n
+--stock static
+
+
+// functions
+
+-draw
+-add
+-filter
